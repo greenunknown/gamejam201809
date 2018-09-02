@@ -51,9 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\cameraController.cs" />
-     <Compile Include="Assets\Scripts\PhysicsObject.cs" />
-     <Compile Include="Assets\Scripts\PlayerPlatformerController.cs" />
+     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\ReferenceScripts\PhysicsObject.cs" />
+     <Compile Include="Assets\Scripts\ReferenceScripts\PlayerPlatformerController.cs" />
      <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>E:/Apps/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>

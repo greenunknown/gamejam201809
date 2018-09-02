@@ -15,7 +15,7 @@ TagManager:
   - 
   - BG
   - Platforms
-  - 
+  - Player
   - 
   - 
   - 
@@ -46,4 +46,7 @@ TagManager:
     locked: 0
   - name: Platforms
     uniqueID: 697773509
+    locked: 0
+  - name: Player
+    uniqueID: 4274882983
     locked: 0
