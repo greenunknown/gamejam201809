@@ -166,6 +166,21 @@ Prefab:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 61361863346401880, guid: a601ddd96927e214684edfd593e155a8,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 083d8143fa446cd4d8f810b81a5c892f, type: 2}
+    - target: {fileID: 61361863346401880, guid: a601ddd96927e214684edfd593e155a8,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.009896904
+      objectReference: {fileID: 0}
+    - target: {fileID: 61361863346401880, guid: a601ddd96927e214684edfd593e155a8,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.6202062
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114266347436793998, guid: a601ddd96927e214684edfd593e155a8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: a601ddd96927e214684edfd593e155a8, type: 2}
@@ -1053,7 +1068,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_GroundCheck: {fileID: 905403097}
   m_CeilingCheck: {fileID: 1615471717}
-  m_CrouchDisableCollider: {fileID: 0}
+  m_CrouchDisableCollider: {fileID: 1865035058}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -1064,6 +1079,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: CharacterController2D+BoolEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!61 &1865035058 stripped
+BoxCollider2D:
+  m_PrefabParentObject: {fileID: 61361863346401880, guid: a601ddd96927e214684edfd593e155a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 140001990}
 --- !u!4 &1865035060 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4080256334720046, guid: a601ddd96927e214684edfd593e155a8,
