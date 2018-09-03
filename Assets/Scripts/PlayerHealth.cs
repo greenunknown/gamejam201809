@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class PlayerHealth : MonoBehaviour {
+public class PlayerHealth : Player {
 	public int startingHealth = 100;
     public int currentHealth;
     
@@ -25,7 +25,7 @@ public class PlayerHealth : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		CheckDeath();
 	}
 
 	private void OnTriggerEnter2D(Collider2D other)
@@ -49,8 +49,6 @@ public class PlayerHealth : MonoBehaviour {
 				do nothing (other player is blocking or idle)
 		}
 		 */
-
-		
     }
 
 	private void Respawn()
@@ -73,7 +71,7 @@ public class PlayerHealth : MonoBehaviour {
 	// Check if the player has lost
 	private void CheckLose()
 	{
-		if(currentLife < 0)
+		if(currentLife <= 0)
 		{
 			Destroy(this);
 		}

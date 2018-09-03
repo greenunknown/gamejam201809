@@ -23,4 +23,11 @@ public class Mover : MonoBehaviour {
 		Debug.Log("\nspeed: " + speed + "\nrb2d.velocity: " + rb2d.velocity + "\n");
 	}
 		
+	private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "KillZone" || other.tag == "Platform" || other.tag == "Projectile")
+        {
+            Destroy(this);
+        }
+	}
 }

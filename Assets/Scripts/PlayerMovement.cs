@@ -15,6 +15,14 @@ public class PlayerMovement : Player {
 	void Update () {
 		horizontalMove = Input.GetAxis("Horizontal") * runSpeed;
 		
+		if(horizontalMove < 0)
+		{
+			facingRight = false;
+		} else 
+		{
+			facingRight = true;
+		}
+
 		if(Input.GetButtonDown("Jump"))
 		{
 			jump = true;

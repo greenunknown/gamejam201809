@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerFight : Player {
 
-	public GameObject shot;
+	public /*GameObject*/ Mover shot;
 	public Transform shotSpawn;
 	public float firerate = 0.5f;
 	private float nextFire = 0.0f;
@@ -16,10 +16,16 @@ public class PlayerFight : Player {
 	
 	// Update is called once per frame
 	void Update () {
+		// Update shooting direction
+		shot.direction = facingRight;
+
+
+
+
 		// Melee attack
 		if(Input.GetButtonDown("Fire1") && Time.time > nextFire)
 		{
-				nextFire = Time.time + firerate;
+			nextFire = Time.time + firerate;
 			Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
 		}
 		// Projectile attack

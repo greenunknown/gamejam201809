@@ -35,13 +35,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4080256334720046}
   - component: {fileID: 212017841051101902}
-  - component: {fileID: 61361863346401880}
   - component: {fileID: 50877134978159142}
+  - component: {fileID: 58088582082610398}
   - component: {fileID: 114686803757671910}
   - component: {fileID: 114443555608255406}
   - component: {fileID: 114986482107036666}
   - component: {fileID: 114310676908190122}
-  - component: {fileID: 58088582082610398}
   m_Layer: 10
   m_Name: player
   m_TagString: Player
@@ -169,31 +168,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.32
---- !u!61 &61361863346401880
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1565400557307632}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 083d8143fa446cd4d8f810b81a5c892f, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.009896904}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 0.64, y: 0.64}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.6202062}
-  m_EdgeRadius: 0
 --- !u!114 &114310676908190122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -205,9 +179,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c51128636110ed24e8126c521284aa5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shot: {fileID: 1710066018774768, guid: bff292ab69344574e9989e44105accca, type: 2}
-  shotSpawn: {fileID: 4491191307812566, guid: 3989e91871f792949bc56b9e6f15837f, type: 2}
-  firerate: 0.5
+  facingRight: 1
+  shot: {fileID: 114341955232824466, guid: bff292ab69344574e9989e44105accca, type: 2}
+  shotSpawn: {fileID: 4243895306173976}
+  firerate: 0.4
 --- !u!114 &114443555608255406
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -219,6 +194,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b914a2c87eef164fb97f8543d59880b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  facingRight: 1
+  shot: {fileID: 0}
+  shotSpawn: {fileID: 0}
   controller: {fileID: 114686803757671910}
   runSpeed: 100
 --- !u!114 &114686803757671910
@@ -241,7 +219,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_GroundCheck: {fileID: 4457287825964854}
   m_CeilingCheck: {fileID: 4137040928365654}
-  m_CrouchDisableCollider: {fileID: 61361863346401880}
+  m_CrouchDisableCollider: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -263,6 +241,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 599b42b756dc26c4aa93df7df2dba931, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  facingRight: 1
+  shot: {fileID: 0}
+  shotSpawn: {fileID: 0}
   startingHealth: 100
   currentHealth: 0
   startingLife: 4

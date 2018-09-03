@@ -58,8 +58,6 @@
      <Compile Include="Assets\Scripts\PlayerFight.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\ReferenceScripts\PhysicsObject.cs" />
-     <Compile Include="Assets\Scripts\ReferenceScripts\PlayerPlatformerController.cs" />
      <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>E:/Apps/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
