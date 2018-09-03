@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : Player {
 
 	public CharacterController2D controller;
 	public float runSpeed = 40f;
@@ -14,6 +14,16 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		horizontalMove = Input.GetAxis("Horizontal") * runSpeed;
+		if(horizontalMove < 0)
+			facingRight = false;
+		else
+			facingRight = true;
+
+
+		shot.direction = facingRight;
+		
+		Debug.Log("horizontalMove" + horizontalMove);
+
 
 		if(Input.GetButtonDown("Jump"))
 		{

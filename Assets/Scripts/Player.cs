@@ -5,7 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
 	public bool facingRight = true;
-	
+	protected Mover shot;
+
 	// Use this for initialization
 	void Start () {
 		
