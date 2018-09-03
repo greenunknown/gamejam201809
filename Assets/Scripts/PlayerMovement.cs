@@ -33,7 +33,13 @@ public class PlayerMovement : MonoBehaviour {
 	/// This function is called every fixed framerate frame, if the MonoBehaviour is enabled.
 	void FixedUpdate()
 	{
-		controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
+		controller.Move(horizontalMove * Time.fixedDeltaTime, false/*crouch*/, jump);
 		jump = false;
 	}
+
+	// Collision function for non-health objects such as platforms and blocks
+	/*private void OnTriggerEnter2D(Collider2D other)
+    {
+
+	}*/
 }

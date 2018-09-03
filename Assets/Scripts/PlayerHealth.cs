@@ -38,12 +38,15 @@ public class PlayerHealth : MonoBehaviour {
 		/*
 		if (other.tag == "Projectile")
 		{
-			currentHealth -= projectileDamage;
+			currentHealth -= projectileDamage; // GameObject.FindGameObjectWithTag("Projectile").damage
 		}
 
 		if (other.tag == "Player")
 		{
-			if other player 
+			if other player is attacking
+				then take damage
+			else
+				do nothing (other player is blocking or idle)
 		}
 		 */
 
