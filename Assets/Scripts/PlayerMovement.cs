@@ -14,17 +14,7 @@ public class PlayerMovement : Player {
 	// Update is called once per frame
 	void Update () {
 		horizontalMove = Input.GetAxis("Horizontal") * runSpeed;
-		if(horizontalMove < 0)
-			facingRight = false;
-		else
-			facingRight = true;
-
-
-		shot.direction = facingRight;
 		
-		Debug.Log("horizontalMove" + horizontalMove);
-
-
 		if(Input.GetButtonDown("Jump"))
 		{
 			jump = true;
