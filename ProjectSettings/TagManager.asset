@@ -6,6 +6,8 @@ TagManager:
   tags:
   - KillZone
   - SpawnPoint
+  - Platform
+  - Projectile
   layers:
   - Default
   - TransparentFX

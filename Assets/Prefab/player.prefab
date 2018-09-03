@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114686803757671910}
   - component: {fileID: 114443555608255406}
   - component: {fileID: 114986482107036666}
+  - component: {fileID: 114310676908190122}
   - component: {fileID: 58088582082610398}
   m_Layer: 10
   m_Name: player
@@ -63,6 +64,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1987107465247028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4243895306173976}
+  m_Layer: 10
+  m_Name: ShotSpawnPoint
+  m_TagString: Projectile
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &4080256334720046
 Transform:
   m_ObjectHideFlags: 1
@@ -75,6 +91,7 @@ Transform:
   m_Children:
   - {fileID: 4137040928365654}
   - {fileID: 4457287825964854}
+  - {fileID: 4243895306173976}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -90,6 +107,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4080256334720046}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4243895306173976
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1987107465247028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.379, y: -0.202, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4080256334720046}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4457287825964854
 Transform:
@@ -164,6 +194,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.6202062}
   m_EdgeRadius: 0
+--- !u!114 &114310676908190122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1565400557307632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c51128636110ed24e8126c521284aa5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shot: {fileID: 1710066018774768, guid: bff292ab69344574e9989e44105accca, type: 2}
+  shotSpawn: {fileID: 4491191307812566, guid: 3989e91871f792949bc56b9e6f15837f, type: 2}
+  firerate: 0.5
 --- !u!114 &114443555608255406
 MonoBehaviour:
   m_ObjectHideFlags: 1
