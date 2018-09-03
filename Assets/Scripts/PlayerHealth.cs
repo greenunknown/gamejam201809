@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class PlayerHealth : Player {
+
+	public const int projDamage = 20;
+
 	public int startingHealth = 100;
     public int currentHealth;
     
@@ -35,12 +38,12 @@ public class PlayerHealth : Player {
             Respawn();
         }
 
-		/*
+		
 		if (other.tag == "Projectile")
 		{
-			currentHealth -= projectileDamage; // GameObject.FindGameObjectWithTag("Projectile").damage
+			TakeDamage(projDamage); //currentHealth -= projectileDamage; // GameObject.FindGameObjectWithTag("Projectile").damage
 		}
-
+		/*
 		if (other.tag == "Player")
 		{
 			if other player is attacking
@@ -75,5 +78,10 @@ public class PlayerHealth : Player {
 		{
 			Destroy(this);
 		}
+	}
+
+	public void TakeDamage(int damage)
+	{
+		currentHealth -= damage;
 	}
 }

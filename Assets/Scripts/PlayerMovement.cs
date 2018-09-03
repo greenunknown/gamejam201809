@@ -15,7 +15,7 @@ public class PlayerMovement : Player {
 	void Update () {
 		horizontalMove = Input.GetAxis("Horizontal") * runSpeed;
 		
-		if(horizontalMove < 0)
+		if(horizontalMove < -0.00001f)
 		{
 			facingRight = false;
 		} else 

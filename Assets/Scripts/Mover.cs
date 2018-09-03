@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Mover : MonoBehaviour {
-
 	public float speed;
 	public bool direction = true;
 
@@ -29,5 +28,6 @@ public class Mover : MonoBehaviour {
         {
             Destroy(this);
         }
+		
 	}
 }
